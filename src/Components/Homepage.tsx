@@ -331,25 +331,25 @@ export default function HomePage() {
                 title: "Architects",
                 count: "250+",
                 image:
-                  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=200&fit=crop",
+                  "https://i.pinimg.com/736x/69/5b/2b/695b2b711aca42ae973b0c235ea521b1.jpg",
               },
               {
                 title: "Civil Engineers",
                 count: "180+",
                 image:
-                  "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=200&fit=crop",
+                  "https://i.pinimg.com/1200x/71/ac/50/71ac50666ba9a841b3f5cf0172b3aa09.jpg",
               },
               {
                 title: "Contractors",
                 count: "320+",
                 image:
-                  "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=200&fit=crop",
+                  "https://i.pinimg.com/736x/e9/54/41/e9544179fb8fe94729285978021480d5.jpg",
               },
               {
                 title: "Interior Designers",
                 count: "150+",
                 image:
-                  "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&h=200&fit=crop",
+                  "https://i.pinimg.com/736x/b7/2c/72/b72c72ac116cfa7c4000c4a049f6775e.jpg",
               },
             ].map((prof, index) => (
               <div
@@ -390,20 +390,20 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-8">
             {[
               {
-                name: "Rajesh Shrestha",
+                name: "John Anderson",
                 role: "Homeowner, Kathmandu",
                 content:
                   "NirmaanSathi helped us find an excellent architect for our dream home. The process was smooth and transparent from start to finish.",
                 image:
-                  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face",
+                  "https://i.pinimg.com/736x/99/1c/ba/991cba26f2580b2a070b2641890acf7f.jpg",
               },
               {
-                name: "Priya Tamang",
+                name: "Tina Johnson",
                 role: "Business Owner, Pokhara",
                 content:
                   "Finding reliable contractors for our office building was challenging until we discovered NirmaanSathi. Highly recommended!",
                 image:
-                  "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=60&h=60&fit=crop&crop=face",
+                  "https://imgcdn.stablediffusionweb.com/2024/12/3/80f18dc7-e45d-43fa-81b2-3048e4672cea.jpg",
               },
             ].map((testimonial, index) => (
               <div key={index} className="bg-white p-8 rounded-xl">
@@ -478,7 +478,7 @@ export default function HomePage() {
               <div className="flex space-x-4">
                 <div className="flex items-center text-gray-400">
                   <Phone className="w-4 h-4 mr-2" />
-                  <span>+977-1-4567890</span>
+                  <span>+977-9762883484</span>
                 </div>
                 <div className="flex items-center text-gray-400">
                   <Mail className="w-4 h-4 mr-2" />

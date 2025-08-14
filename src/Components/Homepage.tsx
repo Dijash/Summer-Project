@@ -56,28 +56,28 @@ export default function HomePage() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <a
-              href="#services"
+              href="/search"
               className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
             >
-              Services
+              Find Professionals
+            </a>
+            <a
+              href="/projects"
+              className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+            >
+              Project Map
+            </a>
+            <a
+              href="/quote-request"
+              className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+            >
+              Get Quote
             </a>
             <a
               href="#how-it-works"
               className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
             >
               How It Works
-            </a>
-            <a
-              href="#professionals"
-              className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
-            >
-              Find Professionals
-            </a>
-            <a
-              href="#about"
-              className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
-            >
-              About
             </a>
             <a
               href="#contact"
@@ -88,12 +88,16 @@ export default function HomePage() {
           </div>
 
           <div className="hidden md:flex items-center space-x-4">
+            
             <button className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
               Sign In
             </button>
-            <button className="bg-blue-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors">
-              Get Started
-            </button>
+            <a
+              href="/quote-request"
+              className="bg-blue-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors"
+            >
+              Get Quote
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -113,23 +117,23 @@ export default function HomePage() {
         {mobileMenuOpen && (
           <div className="md:hidden bg-white border-t">
             <div className="px-6 py-4 space-y-4">
-              <a href="#services" className="block text-gray-700 font-medium">
-                Services
+              <a href="/search" className="block text-gray-700 font-medium">
+                Find Professionals
+              </a>
+              <a href="/projects" className="block text-gray-700 font-medium">
+                Project Map
+              </a>
+              <a
+                href="/quote-request"
+                className="block text-gray-700 font-medium"
+              >
+                Get Quote
               </a>
               <a
                 href="#how-it-works"
                 className="block text-gray-700 font-medium"
               >
                 How It Works
-              </a>
-              <a
-                href="#professionals"
-                className="block text-gray-700 font-medium"
-              >
-                Find Professionals
-              </a>
-              <a href="#about" className="block text-gray-700 font-medium">
-                About
               </a>
               <a href="#contact" className="block text-gray-700 font-medium">
                 Contact
@@ -138,9 +142,12 @@ export default function HomePage() {
                 <button className="block w-full text-left text-gray-700 font-medium">
                   Sign In
                 </button>
-                <button className="block w-full bg-blue-600 text-white px-4 py-2 rounded-lg font-medium">
-                  Get Started
-                </button>
+                <a
+                  href="/quote-request"
+                  className="block w-full bg-blue-600 text-white px-4 py-2 rounded-lg font-medium"
+                >
+                  Get Quote
+                </a>
               </div>
             </div>
           </div>
@@ -168,9 +175,12 @@ export default function HomePage() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-              <button className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-700 transition-colors">
+              <a
+                href="/search"
+                className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-700 transition-colors text-center"
+              >
                 Find Professionals
-              </button>
+              </a>
               <button className="flex items-center justify-center text-gray-700 hover:text-blue-600 transition-colors font-semibold">
                 <PlayCircle className="w-5 h-5 mr-2" />
                 Watch Demo
@@ -331,25 +341,25 @@ export default function HomePage() {
                 title: "Architects",
                 count: "250+",
                 image:
-                  "https://i.pinimg.com/736x/69/5b/2b/695b2b711aca42ae973b0c235ea521b1.jpg",
+                  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=200&fit=crop",
               },
               {
                 title: "Civil Engineers",
                 count: "180+",
                 image:
-                  "https://i.pinimg.com/1200x/71/ac/50/71ac50666ba9a841b3f5cf0172b3aa09.jpg",
+                  "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=200&fit=crop",
               },
               {
                 title: "Contractors",
                 count: "320+",
                 image:
-                  "https://i.pinimg.com/736x/e9/54/41/e9544179fb8fe94729285978021480d5.jpg",
+                  "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=200&fit=crop",
               },
               {
                 title: "Interior Designers",
                 count: "150+",
                 image:
-                  "https://i.pinimg.com/736x/b7/2c/72/b72c72ac116cfa7c4000c4a049f6775e.jpg",
+                  "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&h=200&fit=crop",
               },
             ].map((prof, index) => (
               <div
@@ -390,20 +400,20 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-8">
             {[
               {
-                name: "John Anderson",
+                name: "Rajesh Shrestha",
                 role: "Homeowner, Kathmandu",
                 content:
                   "NirmaanSathi helped us find an excellent architect for our dream home. The process was smooth and transparent from start to finish.",
                 image:
-                  "https://i.pinimg.com/736x/99/1c/ba/991cba26f2580b2a070b2641890acf7f.jpg",
+                  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face",
               },
               {
-                name: "Tina Johnson",
+                name: "Priya Tamang",
                 role: "Business Owner, Pokhara",
                 content:
                   "Finding reliable contractors for our office building was challenging until we discovered NirmaanSathi. Highly recommended!",
                 image:
-                  "https://imgcdn.stablediffusionweb.com/2024/12/3/80f18dc7-e45d-43fa-81b2-3048e4672cea.jpg",
+                  "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=60&h=60&fit=crop&crop=face",
               },
             ].map((testimonial, index) => (
               <div key={index} className="bg-white p-8 rounded-xl">
@@ -450,12 +460,18 @@ export default function HomePage() {
             construction professionals through NirmaanSathi.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition-colors">
-              Get Started Today
-            </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
+            <a
+              href="/quote-request"
+              className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition-colors text-center"
+            >
+              Get Quote Today
+            </a>
+            <a
+              href="#contact"
+              className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors text-center"
+            >
               Contact Us
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -478,7 +494,7 @@ export default function HomePage() {
               <div className="flex space-x-4">
                 <div className="flex items-center text-gray-400">
                   <Phone className="w-4 h-4 mr-2" />
-                  <span>+977-9762883484</span>
+                  <span>+977-1-4567890</span>
                 </div>
                 <div className="flex items-center text-gray-400">
                   <Mail className="w-4 h-4 mr-2" />
@@ -488,42 +504,60 @@ export default function HomePage() {
             </div>
 
             <div>
-              <h4 className="font-semibold mb-4">Services</h4>
+              <h4 className="font-semibold mb-4">Platform</h4>
               <ul className="space-y-2 text-gray-400">
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a
+                    href="/search"
+                    className="hover:text-white transition-colors"
+                  >
                     Find Professionals
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Project Management
+                  <a
+                    href="/projects"
+                    className="hover:text-white transition-colors"
+                  >
+                    Project Map
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Quality Assurance
+                  <a
+                    href="/quote-request"
+                    className="hover:text-white transition-colors"
+                  >
+                    Request Quote
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Support
+                  <a
+                    href="/admin"
+                    className="hover:text-white transition-colors"
+                  >
+                    Admin Dashboard
                   </a>
                 </li>
               </ul>
             </div>
 
             <div>
-              <h4 className="font-semibold mb-4">Company</h4>
+              <h4 className="font-semibold mb-4">Support</h4>
               <ul className="space-y-2 text-gray-400">
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    About Us
+                  <a
+                    href="#how-it-works"
+                    className="hover:text-white transition-colors"
+                  >
+                    How It Works
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    How It Works
+                  <a
+                    href="#contact"
+                    className="hover:text-white transition-colors"
+                  >
+                    Contact Us
                   </a>
                 </li>
                 <li>

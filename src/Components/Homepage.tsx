@@ -45,9 +45,9 @@ export default function HomePage() {
       >
         <div className="max-w-6xl mx-auto flex justify-between items-center px-6">
           <a href="/homepage">
-            <div className="flex items-center space-x-3">
-              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                <Building2 className="w-5 h-5 text-white" />
+            <div className="flex items-center">
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center">
+                <img src="/logo.png" alt=""  />
               </div>
               <span className="text-2xl font-bold text-gray-900">
                 NirmaanSathi
